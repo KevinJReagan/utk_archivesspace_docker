@@ -22,11 +22,33 @@ rolling to production.
 How to use
 ----------
 
-To build and deploy:
+To build and deploy **inititially**:
 
 .. code-block:: console
 
     $ docker-compose up --build -d
+
+
+To start, but **don't rebuild!!!**
+
+.. code-block:: console
+
+    $ docker-compose up -d
+
+
+To turn off ArchivesSpace:
+
+.. code-block:: console
+
+    $ docker stop archivesspace
+
+
+To delete all your computers you've ever built:
+
+.. code-block:: console
+
+    $ docker system prune -a
+
 
 Add EADS for import at **/snake/data/eads**.
 
